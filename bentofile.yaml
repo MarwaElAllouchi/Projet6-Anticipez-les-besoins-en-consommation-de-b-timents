@@ -1,0 +1,19 @@
+service: "service.py:EnergyService"
+
+include:
+  - service.py
+  - enums.py
+  - requirements.txt
+
+python:
+  packages:
+    - bentoml==1.4.28
+    - pandas
+    - numpy
+    - scikit-learn
+    - fastapi
+    - uvicorn
+    - pydantic
+
+models:
+  - "best_energy_model:latest"

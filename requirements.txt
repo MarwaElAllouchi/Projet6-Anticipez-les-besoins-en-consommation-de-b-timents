@@ -1,0 +1,7 @@
+bentoml==1.4.28
+pandas
+numpy
+scikit-learn
+pydantic
+fastapi
+uvicorn
